@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body, html{
+	height: 100vh;
+	overflow-y: auto;
+}
+
+.App{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	background: #f8f8f8;
+	
+	@media screen and (min-width:768px) {
+		flex-direction:row;
+		gap:30px;
+	}
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+	}
+}
+
+.page{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: margin-left 1s;
+}
+
+.page-with-navbar{
+	margin-left: 15%;
+}
+
+@media only screen and (max-width: 768px){
+	.page-with-navbar{
+		width: 100%;
+		margin-left: 0;
+	}
+
+}
+  
+  
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	
+	@media screen and (max-width:768px) {
+		padding: 30px 0;
+		width: 100%;
+
+	}
+	@media screen and (min-width: 768px){
+		max-width: 1100px;
+		margin: 0 auto;
+		width: calc(100% - 284px);
+		padding: 10px;
+	}
+}
+  .content-wrap{
+	display: flex;
+	@media screen and (max-width:768px) {
+		flex-direction: column;
+	}
+	@media screen and (min-width:767px) and (max-width:1099px) {
+		flex-direction: column;
+	}
+	@media screen and (min-width:1100px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  }
+  .flex-row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  .btn{
+	height: 45px;
+	font-size: 16px;
+	border-radius: 10px;
+	text-transform: capitalize;
+	border: none;
+	padding: 0.625em 1.875em;
+	max-width: 136px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .btn-default{
+	background: #fff;
+	color: #2A2626;
+  }
+  .btn-primary{
+	background: #34393E;
+	color: #fff;
+  }
+  @media screen and (min-width:767px) and (max-width:1099px) {
+	.right{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	}
+.back{
+	padding: 15px;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    width: 50px;
+}
+.chat{
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 1;
+	background-color:#2E95F4;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	gap: 10px;
+	text-transform: capitalize;
+	img{
+		background-color: #fff;
+		border-radius: 30px;
+		padding: 10px;
+		box-shadow: 0px 4px 16px 0px #00000040;
+
+	}
+}

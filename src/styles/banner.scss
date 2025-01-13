@@ -1,0 +1,24 @@
+.banner{
+    height: 72px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-image:url('./images/banner-img.svg'), linear-gradient(#E2F1FF, #DEEFFF);
+    background-position: right;
+    background-repeat: no-repeat;
+    align-items: center;
+    .banner-img{
+        width: 50px;
+        height: 50px;
+    }
+    .txt{
+        span{
+            color:#2E95F4;
+        }
+    }
+}

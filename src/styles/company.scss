@@ -1,0 +1,35 @@
+.wrapper{
+    background: #fff;
+    margin: 20px 0; 
+    .title{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .h4{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1C1818;
+    }
+    .options-wrap{
+        background:#f8f8f8;
+        height: 200px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 20px 0;
+    }
+    .option{
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        background: #ddd;
+        gap: 10px;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
